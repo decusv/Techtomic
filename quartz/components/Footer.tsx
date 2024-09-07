@@ -21,7 +21,7 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
-
+          <p>Created using Quartz.</p>
       </footer>
     )
   }
