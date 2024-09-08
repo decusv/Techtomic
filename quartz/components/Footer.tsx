@@ -2,18 +2,15 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import style from "./styles/footer.scss"
 import { version } from "../../package.json"
 import { i18n } from "../i18n"
-
 interface Options {
   links: Record<string, string>
 }
-
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
@@ -21,11 +18,13 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
-          <p>Created using Quartz.</p>
+
+        <p>
+          {i18n(cfg.locale).components.footer.createdWith}{" "}Quartz
+        </p>
       </footer>
     )
   }
-
   Footer.css = style
   return Footer
 }) satisfies QuartzComponentConstructor
