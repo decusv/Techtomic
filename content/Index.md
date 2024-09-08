@@ -1,4 +1,8 @@
+---
+title: Example Title
+draft: false
+tags:
+  - example-tag
+---
 
-This is the homepage.
-
-![[Pasted image 20240908004212.png]]
+The rest of your content lives here. You can use **Markdown** here :)
