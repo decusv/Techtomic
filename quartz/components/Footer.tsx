@@ -18,7 +18,7 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
-        <p>Made with Quartz.</p>
+        <p>Made with Quartz</p>
       </footer>
     )
   }
