@@ -19,9 +19,7 @@ export default ((opts?: Options) => {
           ))}
         </ul>
 
-        <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}Quartz
-        </p>
+
       </footer>
     )
   }
