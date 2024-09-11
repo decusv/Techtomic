@@ -1,5 +1,5 @@
 ---
-title: Digital Garden
+title: My Digital Garden
 ---
 
 ![[f7162726-84c4-41f4-8d26-15386611c243.jpeg]]
