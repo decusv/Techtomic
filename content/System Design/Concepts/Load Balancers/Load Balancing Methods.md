@@ -1,5 +1,5 @@
 ---
-title: Load Balancing
+title: Load Balancing Methods
 draft: false
 tags:
   - system-design
@@ -31,20 +31,3 @@ While this avoids the need for a dedicated load balancer, it has several drawbac
 DNS-level load balancing can distribute traffic based on the geographic location of requests. This method ensures that users are directed to servers that are closer to their location, improving response times and overall performance.
 
 ---
-
-## Load Balancer Set-ups
-
-
-### Active-Active [[Load Balancing Methods|Load Balancer]] Setup
-
-- **Overview**: Both load balancers handle requests and monitor each other.
-- **Details**:
-    - Each LB receives requests from the internet.
-    - "Heartbeat" packets are exchanged to confirm that both are operational.
-
-### Active-Passive [[Load Balancing Methods|Load Balancer]] Setup
-
-- **Overview**: One LB is active, and the other is passive, ready to take over if needed.
-- **Details**:
-    - Passive LB promotes itself to active status upon detecting the active LB's failure.
-    - Takes over the public IP address of the failed active LB.

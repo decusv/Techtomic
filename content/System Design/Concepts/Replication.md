@@ -20,7 +20,7 @@ tags:
     - Provides redundancy and handles write operations on both masters.
     - Propagates data changes between master databases.
 
-### [[Load Balancing Methods|Load Balancing]] and Replication
+### [[Load Balancing Methods|Load Balancing Methods]] and Replication
 
 - **Overview**: Integrates load balancing with replication for improved reliability.
 - **Details**:
