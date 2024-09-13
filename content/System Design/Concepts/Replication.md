@@ -7,7 +7,8 @@ tags:
 ---
 ### Replication (Master-Slave)
 
-- **Overview**: Automatically copies data from a master database to slave databases.
+- **Overview**: Automatically copies data from a master database to slave databases. Read from slave copies, write data to master, then propagate data from master to slaves.
+
 - **Details**:
     - Slaves replicate every row from the master.
     - Ensures redundancy in case of master DB failure.
@@ -16,6 +17,7 @@ tags:
 ### Replication (Master-Master)
 
 - **Overview**: Load balances and synchronizes data across two master databases.
+
 - **Details**:
     - Provides redundancy and handles write operations on both masters.
     - Propagates data changes between master databases.
