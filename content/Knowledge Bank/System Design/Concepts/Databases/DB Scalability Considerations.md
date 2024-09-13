@@ -1,5 +1,5 @@
 ---
-title: Database Scalabilitysiderations
+title: DB Scalability Considerations
 draft: false
 tags:
   - scalability
