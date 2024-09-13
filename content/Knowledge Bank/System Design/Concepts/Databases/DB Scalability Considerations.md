@@ -17,3 +17,4 @@ From a horizontal scaling perspective, with the increasing read operations, you'
 
 ## Scaling Non-Relation (NoSQL) Databases
 
+To [[Scaling Approaches#Horizontal Scaling|horizontally]] scale non-relational DBs, [[Denormalization|denormalize]] your datasets early to avoid performance issues and excessive joins needed. Use [[Sharding|sharding]] to distribute load across multiple servers.
