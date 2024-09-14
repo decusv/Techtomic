@@ -34,17 +34,16 @@ tags:
 
 3. What types of NOSQL stores are there? Key-value, column databases, document databases, graph databases and datastructure databases.
 
----
-
 1. Concurrency
 	1. What is shared-state
 	2. message-passing
 	3. dataflow
 	4. software transactional memory
 
-
 1. What is meant by something being deterministic, compared to indeterministic compared to nondeterministic.
 
+---
+## Stopped here.
 
 1. Scalability patterns
 	1. Behavior
