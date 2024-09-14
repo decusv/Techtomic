@@ -1,7 +1,6 @@
 ---
-title: Sample page
+title: Data Grid
 draft: false
 tags:
   - system-design
-  - scalability
 ---
