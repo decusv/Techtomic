@@ -9,5 +9,3 @@ Fail-over is an availability pattern where a backup system automatically takes o
 **Active-passive failover**: One system is active, and the other is on standby.
 
 **Active-active failover**: Both systems are active, sharing the load, and can take over if one fails.
-
-``

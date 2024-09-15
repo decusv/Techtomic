@@ -30,4 +30,8 @@ While this avoids the need for a dedicated load balancer, it has several drawbac
 
 DNS-level load balancing can distribute traffic based on the geographic location of requests. This method ensures that users are directed to servers that are closer to their location, improving response times and overall performance.
 
----
+
+## Additional load balancing options
+
+1. Load balance based on least server CPU usage.
+2. Load balance based on least number of connections to the server.
