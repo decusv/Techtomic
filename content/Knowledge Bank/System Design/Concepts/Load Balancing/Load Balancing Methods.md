@@ -5,6 +5,7 @@ tags:
   - system-design
   - availability
   - scalability
+  - dns
 ---
 #### Load Balancers and Sticky Sessions
 
@@ -21,14 +22,20 @@ This segmentation improves performance by reducing the workload on any single se
 
 #### Round-Robin DNS Load Balancing
 
-Round-robin DNS load balancing offers a simpler alternative to traditional load balancers by distributing requests across servers using DNS resolution. Each time a request is made, the DNS server returns a different backend server, cycling through available options in a round-robin fashion. 
+Round-robin [[Domain Name System (DNS)|DNS]] load balancing offers a simpler alternative to traditional load balancers by distributing requests across servers using [[Domain Name System (DNS)|DNS]] resolution. Each time a request is made, the DNS server returns a different backend server, cycling through available options in a round-robin fashion. 
 
-While this avoids the need for a dedicated load balancer, it has several drawbacks. Some servers may receive more traffic than others, leading to imbalanced resource use. Additionally, caching efficiency is reduced, as identical queries may not return cached data from the same server. The **TTL (Time to Live)** settings in DNS also dictate how long a user’s request is routed to a particular server before being redirected to another. Though easy to implement, round-robin DNS is not as efficient as traditional load balancing in terms of traffic management and performance optimization.
+While this avoids the need for a dedicated load balancer, it has several drawbacks. Some servers may receive more traffic than others, leading to imbalanced resource use. Additionally, caching efficiency is reduced, as identical queries may not return cached data from the same server. The **TTL (Time to Live)** settings in [[Domain Name System (DNS)|DNS]] also dictate how long a user’s request is routed to a particular server before being redirected to another. Though easy to implement, round-robin DNS is not as efficient as traditional load balancing in terms of traffic management and performance optimization.
 
 
-**DNS-Level Load Balancing On Geography**
+**[[Domain Name System (DNS)|DNS]]-Level Load Balancing On Geography**
 
-DNS-level load balancing can distribute traffic based on the geographic location of requests. This method ensures that users are directed to servers that are closer to their location, improving response times and overall performance.
+[[Domain Name System (DNS)|DNS]]-level load balancing can distribute traffic based on the geographic location of requests. This method ensures that users are directed to servers that are closer to their location, improving response times and overall performance.
+
+---
+
+## Latency-based DNS Load Balancing
+
+
 
 
 ## Additional load balancing options
