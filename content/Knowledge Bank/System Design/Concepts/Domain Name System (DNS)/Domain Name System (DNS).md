@@ -17,3 +17,11 @@ The propagation delay to all lower-level/local DNS servers and resolvers depends
 
 DNS results can also be cached by your browser or OS for a certain period of time, determined by the time to live (TTL).
 
+
+---
+
+## Disadvantages of DNS
+
+- Accessing a DNS server introduces a slight delay, although this can be mitigated by caching.
+- DNS Server management is done by governments, ISPs and large companies which makes it a centralized control point that can lead to censorship, surveillance or manipulation of DNS records.l
+- DNS services can be placed under DDoS attacks, preventing users from accessing websites such as Twitter. as they weren't able to know their IP addresses.
