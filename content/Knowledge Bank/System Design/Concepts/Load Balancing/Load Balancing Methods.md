@@ -35,8 +35,7 @@ While this avoids the need for a dedicated load balancer, it has several drawbac
 
 ## Latency-based DNS Load Balancing
 
-
-
+(?)
 
 ## Additional load balancing options
 

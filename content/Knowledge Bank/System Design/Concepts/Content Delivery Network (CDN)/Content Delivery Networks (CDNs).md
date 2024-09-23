@@ -39,3 +39,11 @@ The time-to-live (TTL) determines how long the content gets cached at the edge l
 CDN costs can be significant depending on the traffic. This should be weighed against how much it would cost to not use CDNs.
 
 In pull CDNs, content might be stale if its TTL hasn't been reached, but the content has updated at the origin server. As such, the existing content is cached at the edge location which will mean the CDN could serve stale content to users requesting it until the TTL expires.
+
+---
+
+## Sources
+
+1. https://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/
+
+1. https://figshare.com/articles/journal_contribution/Globally_distributed_content_delivery/6605972?file=12096455
