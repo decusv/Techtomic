@@ -4,6 +4,8 @@ draft: false
 tags:
   - lb
 ---
+![[Pasted image 20240924233114.png]]
+
 A load balancer (LB) is a component that distributes incoming client requests to computing resources such as application servers and databases. The LB forwards the requests, and also forwards the responses from the resources back to the client.
 
 ## Advantages of Load Balancers 
