@@ -35,6 +35,21 @@ Weighted round-robin load balancing offers a version of round-robin where the lo
 
 [[Domain Name System (DNS)|DNS]]-level load balancing can distribute traffic based on the geographic location of requests. This method ensures that users are directed to servers that are closer to their location, improving response times and overall performance.
 
+## Layer 4 Load Balancing
+
+Layer 4 load balancers are high performance and low overhead, because they work on the Transport Layer (OSI L4) and inspect the source and destination IP addresses & ports. They do not inspect the application data inside the packet, hence the low overhead.
+
+Once inspected, they perform Network Address Translation (NAT) and modify the IP addresses in the packet headers to point directly to the backend server. Destination NAT (DNAT) is typically used for load balancing, where only the destination IP and port are modified.
+
+## Layer 7 Load Balancing
+
+More overhead than Layer 4 Load Balancers (LBs). Both L4 and L7 can be high performance given modern hardware. These LBs inspect application level data in order to make routing decisions. The types of data can include HTTP Headers, Message content itself i.e., URL pathway, API call made, Cookies.
+
+Once the request has been fully received, the original network connection is terminated. Once the request is inspected and a routing decision has been made, a new network connection is established between the LB and the backend server.
+
+This type of load balancing provides flexibility e.g., API calls can be made to different backend servers were one can be more hardened for the purposes of handling financial data e.g., banking transactions versus another responsible for marketing preferences.
+
+
 ---
 
 ## Latency-based DNS Load Balancing

@@ -17,6 +17,13 @@ A load balancer (LB) is a component that distributes incoming client requests to
 - Allows for simplifying management of X.509 certificates as they can be managed on LBs instead of the servers themselves.
 - Can help ensuring session persistence/[[Load Balancing Methods#Load Balancers and Sticky Sessions|sticky sessions]].
 
+## Disadvantages of Load Balancers
+
+- Can become a bottleneck if the amount of resources available is not sufficient.
+- Will result in a single point of failure unless more load balancers are introduced.
+- Increases architecture complexity by introducing load balancer(s).
+
+
 LBs can be implemented via software like HAProxy, or via hardware which is more expensive.
 
 ---

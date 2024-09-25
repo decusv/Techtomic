@@ -12,3 +12,9 @@ Vertical scaling involves upgrading the resources of a single machine, such as i
 ## Horizontal Scaling
 
 Horizontal scaling addresses the limitations of vertical scaling by using multiple servers instead of relying on a single machine. Rather than upgrading one powerful server, traffic is distributed across a network of less powerful servers. This approach is more scalable and can handle greater loads as traffic increases. Horizontal scaling typically requires load balancers to distribute incoming traffic to various servers, ensuring that no single machine is overwhelmed.
+
+### Disadvantages of Horizontal Scaling
+
+- Introduces complexity as downstream systems like caches and databases need to be able to accept multiple connections. 
+- Involves cloning servers.
+- 
